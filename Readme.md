@@ -41,7 +41,8 @@ const schema = {
     },
     email: {
       type: "string",
-      format: "email"
+      format: "email",
+      email: true,
     },
     fooorbar: {
       type: "string",
@@ -161,8 +162,8 @@ No keys
 - `minLength` (`min`)
 - `maxLength` (`max`)
 - `pattern` (`matches` or `regex`)
-- `email` (`format: 'email'`)
-- `url` (`format: 'url'`)
+- `email` (`format: 'email'`) [ usage: email:true ]
+- `url` (`format: 'url'`) [ usage: url:true ]
 - `lowercase`
 - `uppercase`
 - `trim`
